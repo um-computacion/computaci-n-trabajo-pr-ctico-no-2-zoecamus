@@ -1,5 +1,5 @@
 import unittest
-from palindrome import is_palindrome
+from src.palindrome import is_palindrome
 class TestPalindrome(unittest.TestCase):
 
     def test_simple1(self):
@@ -45,7 +45,7 @@ class TestPalindrome(unittest.TestCase):
         result = is_palindrome('A')
         self.assertEqual(result, True)
     def test_edge_cases4(self):
-        result = is_palindrome('¡!')
+        result = is_palindrome('¿?')
         self.assertEqual(result, True)
 
 
