@@ -1,6 +1,7 @@
 import unittest
 
 class TestPalindrome(unittest.TestCase):
+
     def test_simple1(self):
         result = is_palindrome('oso')
         self.assertEqual(result, True)
