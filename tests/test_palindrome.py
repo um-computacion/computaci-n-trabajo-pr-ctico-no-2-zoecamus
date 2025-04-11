@@ -14,7 +14,7 @@ class TestPalindrome(unittest.TestCase):
     def test_simple4(self):
         result = is_palindrome('aa')
         self.assertEqual(result, True)
-        
+
     def test_phrase1(self):
         result = is_palindrome('A man, a plan, a canal: Panama')
         self.assertEqual(result, True)
@@ -34,6 +34,20 @@ class TestPalindrome(unittest.TestCase):
     def test_non_palindrome3(self):
         result = is_palindrome('el chico juega al futbol')
         self.assertEqual(result, False)
+
+    def test_edge_cases1(self):
+        result = is_palindrome('')
+        self.assertEqual(result, True)
+    def test_edge_cases2(self):
+        result = is_palindrome('a')
+        self.assertEqual(result, True)
+    def test_edge_cases3(self):
+        result = is_palindrome('A')
+        self.assertEqual(result, True)
+    def test_edge_cases4(self):
+        result = is_palindrome('¡!')
+        self.assertEqual(result, True)
+
 
 if __name__ == '__main__':
     unittest.main()
