@@ -16,7 +16,6 @@ def is_palindrome(word: str):
             return False
     return True
 
-
 def get_input():
     word = input("Ingrese una palabra o frase: ")
     if word == "":
@@ -32,7 +31,6 @@ while True:
         print(f"'{palabra}' es un palíndromo.")
     else:
         print(f"'{palabra}' no es un palíndromo.")
-
 
 
 
